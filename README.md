@@ -1,19 +1,95 @@
-# React + Vite
+# ResumeAI: An Intelligent NLP-Based Resume–Job Matching and Career Recommendation System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ResumeAI is an AI-powered resume intelligence system that analyzes resumes against job descriptions using skill matching, context-aware analysis, and semantic similarity.
 
-Currently, two official plugins are available:
+The system identifies matched skills, detects skill gaps, calculates an intelligent job-match score, and generates personalized recommendations to improve resume–job alignment.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Key Features
 
-## React Compiler
+- PDF resume upload and automated text extraction
+- NLP-based resume and job-description analysis
+- Skill matching and skill-gap detection
+- Context-aware skill analysis
+- Semantic similarity analysis
+- Weighted AI job-match scoring
+- Personalized career recommendations
+- React-based frontend
+- Node.js and Express.js backend
+- REST API integration
+- Git and GitHub version control
+- Responsive and user-friendly interface
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## How It Works
 
-## Expanding the ESLint configuration
+1. Upload a resume in PDF format or paste the resume text.
+2. Paste the target job description.
+3. ResumeAI extracts and analyzes the relevant skills.
+4. The system compares resume skills with job requirements.
+5. Context strength and semantic similarity are evaluated.
+6. A weighted job-match score is calculated.
+7. Matched skills and skill gaps are displayed.
+8. Personalized recommendations are generated.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Match Score
+
+ResumeAI calculates the final match score using three major factors:
+
+- **60% — Required Skill Coverage**
+- **20% — Resume Context Strength**
+- **20% — Semantic/NLP Similarity**
+
+This provides a more meaningful evaluation than simple keyword matching.
+
+## Technology Stack
+
+### Frontend
+
+- React
+- JavaScript
+- HTML
+- CSS
+- Vite
+
+### Backend
+
+- Node.js
+- Express.js
+- REST APIs
+- PDF text extraction
+- NLP-based skill analysis
+
+### Tools
+
+- Git
+- GitHub
+- Visual Studio Code
+
+## Project Structure
+
+```text
+ResumeAI/
+├── backend/
+│   ├── server.js
+│   ├── package.json
+│   └── ...
+│
+├── frontend/
+│   ├── src/
+│   │   ├── App.jsx
+│   │   ├── App.css
+│   │   ├── index.css
+│   │   └── main.jsx
+│   ├── package.json
+│   └── ...
+│
+├── screenshots/
+│   ├── resumeai-home.png
+│   ├── resumeai-upload.png
+│   ├── resumeai-analysis.png
+│   └── resumeai-results.png
+│
+├── .gitignore
+└── README.md
 
 
 
